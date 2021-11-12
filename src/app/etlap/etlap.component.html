@@ -1,0 +1,13 @@
+<div>
+    <table *ngFor="let Etel of Etelek">
+        <tr>
+            <td rowspan="2">
+                <img src="{{Etel.Url}}" />
+            </td>
+            <td>{{Etel.EtelNeve}}</td>
+        </tr>
+        <tr>
+            <td>{{Etel.Leiras}}</td>
+        </tr>
+    </table>
+</div>
