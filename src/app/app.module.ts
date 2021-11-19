@@ -8,6 +8,7 @@ import { TerkepComponent } from './terkep/terkep.component';
 import { EtlapComponent } from './etlap/etlap.component';
 import { AdminComponent } from './admin/admin.component';
 import { FooldalComponent } from './fooldal/fooldal.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooldalComponent } from './fooldal/fooldal.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

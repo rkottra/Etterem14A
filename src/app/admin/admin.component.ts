@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
+  public felhasznalonev:string = "KovacsJanos";
+  public jelszo:string = "";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  Belepes() {
+    alert(this.felhasznalonev);
   }
 
 }
