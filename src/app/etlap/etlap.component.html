@@ -1,13 +1,21 @@
-<div>
-    <table *ngFor="let Etel of Etelek">
+<div *ngIf="etelid == -1">
+    <table *ngFor="let Etel of Etelek; index as i">
         <tr>
-            <td rowspan="2">
-                <img src="{{Etel.Url}}" />
-            </td>
-            <td>{{Etel.EtelNeve}}</td>
-        </tr>
-        <tr>
-            <td>{{Etel.Leiras}}</td>
+            <td><a [routerLink]="['/etlap/'+i]">{{Etel.EtelNeve}}</a></td>
         </tr>
     </table>
+</div>
+<div *ngIf="etelid > -1">
+    <table>
+        <tr>
+            <td rowspan="2">
+                <img src="{{Etelek[etelid].Url}}" />
+            </td>
+            <td>{{Etelek[etelid].EtelNeve}}</td>
+        </tr>
+        <tr>
+            <td>{{Etelek[etelid].Leiras}}</td>
+        </tr>
+    </table>
+    <a [routerLink]="['/etlap']">Vissza</a>
 </div>

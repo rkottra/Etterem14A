@@ -15,6 +15,10 @@ const routes: Routes = [
     component: EtlapComponent
   },
   {
+    path: "etlap/:id",
+    component: EtlapComponent
+  },
+  {
     path: "admin",
     component: AdminComponent
   },
